@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d327608e-4c3e-4e28-83f5-ad78b912102f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="207"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM medico]]>
+	</queryString>
+	<field name="codiMedi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ndniMedi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="appaMedi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apmaMedi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombMedi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechNaciMedi" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="logiMedi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="passMedi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="291" y="15" width="320" height="53" uuid="c0f36f7d-9e6b-4677-ad16-9b402b906dc9"/>
+				<textElement>
+					<font size="32"/>
+				</textElement>
+				<text><![CDATA[REPORTE MEDICOS]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="c3efa4bd-ac9f-4d33-a7f0-3ea67d85e536"/>
+				<text><![CDATA[codiMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="0" width="100" height="20" uuid="43e6a1cf-60d2-4f57-8947-bd83078e4cb9"/>
+				<text><![CDATA[ndniMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="0" width="100" height="20" uuid="434ea4a5-d255-4ed0-a4ec-af6d47dd8ee5"/>
+				<text><![CDATA[appaMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="0" width="100" height="20" uuid="c47dac41-a171-451d-8dba-56540b535463"/>
+				<text><![CDATA[apmaMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="0" width="100" height="20" uuid="eecfd5c2-17c6-4aab-8e6e-38c62fafd403"/>
+				<text><![CDATA[nombMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="0" width="100" height="20" uuid="a9e7c19b-48dc-43b3-b345-7109d1b47e1b"/>
+				<text><![CDATA[fechNaciMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="600" y="0" width="100" height="20" uuid="db2840ba-7dca-498d-9630-86d51c5f1eea"/>
+				<text><![CDATA[logiMedi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="700" y="0" width="100" height="20" uuid="49bdaa31-6727-41a5-b4d2-a6ff4bbff547"/>
+				<text><![CDATA[passMedi]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="20" uuid="409d8012-1eda-4f26-9aed-f15509fdba57"/>
+				<textFieldExpression><![CDATA[$F{codiMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="0" width="100" height="20" uuid="01c13e50-b9c8-4a57-90f7-c0f03aa5e819"/>
+				<textFieldExpression><![CDATA[$F{ndniMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="0" width="100" height="20" uuid="fd45ddbc-cdbb-49d6-9969-d4cc8cecd30e"/>
+				<textFieldExpression><![CDATA[$F{appaMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="100" height="20" uuid="ecafde7e-104c-4399-87e2-1fe12b63e68d"/>
+				<textFieldExpression><![CDATA[$F{apmaMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="0" width="100" height="20" uuid="764fb4ed-0e0f-431b-a7fc-580de0711db1"/>
+				<textFieldExpression><![CDATA[$F{nombMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="100" height="20" uuid="8917111e-f3fd-441e-918f-56260bfd5e24"/>
+				<textFieldExpression><![CDATA[$F{fechNaciMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="0" width="100" height="20" uuid="632933ba-1efb-47bf-8a48-33e35ac03047"/>
+				<textFieldExpression><![CDATA[$F{logiMedi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="702" y="0" width="100" height="20" uuid="db63216f-9303-4d9a-8575-c7c94bbfec19"/>
+				<textFieldExpression><![CDATA[$F{passMedi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
